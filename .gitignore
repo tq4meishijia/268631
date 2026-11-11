@@ -1,0 +1,107 @@
+# 268631 共享知识库 —— 排除规则
+# 本仓库只收录可共享的定稿、资料与知识文档；其余为本地工作区的过程产物。
+# 新增内容默认可追踪；下列模式仅用于阻挡典型的工具残留与临时文件。
+
+# ---- Agent / 编辑器 / 系统残留 ----
+.workbuddy/
+.slidep/
+.cache/
+.file-org-trash/
+.file-org-undo/
+.edgeone/
+.workbuddy_rid.txt
+.env
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 转换与构建的隐藏临时目录 ----
+.pptx-build-*/
+.pptx-clone-verify-*/
+.generated.convert-*/
+.pptm_redo_*.convert-*/
+exports/
+validation/
+analysis/
+authoring-svg/
+authoring-svg-flat/
+roundtrip-svg/
+sources/
+generated/
+unpacked/
+qc/
+template-import/
+bjut-chemlife-deck/
+old_versions/
+
+# ---- 过程产物 / 一次性工具 / 抓取缓存 ----
+04_工具脚本/
+05_过程产物/
+06_原始材料备份/
+_archive/
+_build/
+_raw/
+_dump/
+mail_batch/
+merge_check/
+beauty_probe/
+tpl_readback/
+pipeline_*/
+pptm_*/
+口播脚本_*/
+tools/
+scripts/
+专业目录核对-原始下载/
+
+# ---- 一次性脚本、日志、备份、解包残留 ----
+_*.py
+_*.log
+_*.jsonl
+_*.pptx
+*.log
+*.tmp
+*.bak
+*.backup
+*.orig
+*.rej
+*.swp
+*~
+*.pyc
+__pycache__/
+*.bin
+*.rels
+*.slide
+*.jsonl
+*.rar
+*.zip
+*.lock
+
+# ---- 位图与非文本素材（模板成品与 SVG 矢量素材已单独纳入）----
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+
+# ---- 隐私密集或超尺寸文件 ----
+260817 保研学生简介.pptx
+*联络表*
+*名单简介*
+*发送台账*
+*当前任务清单*
+*牙科保牙治疗方案汇总*
+bjut_vis.rar
+
+# ---- PDF 默认排除，仅放行两份公开 VI 手册 ----
+*.pdf
+!原始资料&工作区文件/北京工业大学PPT模板/bjut-vi-assets/00_源文件/BJUT-SC*.pdf
+
+# ---- 未纳入的本地脚本、样式、旧格式表单与草稿 ----
+# 本仓库是资料库而非代码库；如需纳入脚本，请显式 git add -f 并更新本规则。
+*.py
+*.js
+*.css
+*.doc
+_draft*
+目录结构说明.md
+采访邀请邮件_按人定制版*

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>选题对比 · 三题目系统分析与量纲匹配检验</title>
+<meta name="description" content="三个候选题目的系统对比：研究侧重、应用场景、技术路线、跑题风险，以及产氢能力与应用需氢量的量纲匹配硬检验。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="analysis.html">
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">H₂</span>
+      <span>光催化产氢项目<small>可再生能源竞赛 · 题目③</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false">菜单</button>
+    <nav class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="project.html">项目详情</a>
+      <a href="plan.html">实施计划</a>
+      <a href="analysis.html">选题对比</a>
+      <a href="application.html">申报指南</a>
+      <a href="guide.html">参赛上手</a>
+      <a href="policy.html">政策评估</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Comparative Analysis</div>
+    <h1>三个候选题目的系统对比与量纲匹配检验</h1>
+    <p>三个题目<strong>技术内核完全相同</strong>——都是"桌面级光催化产氢装置 + 产氢—溶解氢传质耦合动力学建模"，差异只在应用外壳与叙事。风险 90% 来自叙事层，不来自技术层。</p>
+  </div>
+
+  <div class="layout">
+    <main>
+
+      <!-- ============ 01 关键洞察 ============ -->
+      <section class="section" id="insight">
+        <h2><span class="sec-no">01</span>关键洞察</h2>
+        <div class="callout key">
+          <div class="c-icon">★</div>
+          <div>
+            <p class="mt-0"><strong>选择的本质不是"做哪个实验"</strong>（实验工作量几乎一样），而是"<strong>向能源评审讲哪个故事</strong>"。评审是中国可再生能源学会的能源专家，不是医学专家——评审是什么人，作品就讲什么故事。</p>
+          </div>
+        </div>
+
+        <h3>三个候选题目</h3>
+        <div class="compare">
+          <div class="compare-col">
+            <h4>① 富氢水版</h4>
+            <div class="cc-sub">可见光催化富氢水一体化制备装置的研制及产氢—溶解氢传质耦合动力学建模</div>
+            <dl>
+              <dt>研究侧重</dt><dd>装置 + 传质建模 + 富氢水浓度控制</dd>
+              <dt>应用定位</dt><dd>健康 / 饮用水产品</dd>
+              <dt>跑题风险</dt><dd class="tag-bad">高（保健品叙事）</dd>
+              <dt>量纲匹配</dt><dd class="tag-ok">优（需氢量小）</dd>
+            </dl>
+          </div>
+          <div class="compare-col">
+            <h4>② 便携供氢版</h4>
+            <div class="cc-sub">面向便携供氢的可见光催化产氢—溶解氢一体化装置研制与传质动力学建模</div>
+            <dl>
+              <dt>研究侧重</dt><dd>同左 + 便携化 / 流量匹配</dd>
+              <dt>应用定位</dt><dd>清洁能源 / 便携供氢</dd>
+              <dt>跑题风险</dt><dd class="tag-ok">低</dd>
+              <dt>量纲匹配</dt><dd class="tag-bad">差（差 2–3 个数量级）</dd>
+            </dl>
+          </div>
+          <div class="compare-col recommended">
+            <h4>③ 分解水产氢版（现用）</h4>
+            <div class="cc-sub">可见光催化产氢装置的研制及产氢—溶解氢传质耦合动力学建模</div>
+            <dl>
+              <dt>研究侧重</dt><dd>装置 + 三段耦合传质建模（纯科学问题）</dd>
+              <dt>应用定位</dt><dd>可再生能源制氢，不承诺终端</dd>
+              <dt>跑题风险</dt><dd class="tag-ok">零</dd>
+              <dt>量纲匹配</dt><dd class="tag-ok">不涉及（无技术债）</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 02 量纲硬检验 ============ -->
+      <section class="section" id="dimension">
+        <h2><span class="sec-no">02</span>量纲匹配硬检验（本文最有价值的一节）</h2>
+        <p class="sec-desc">三个题目的应用承诺，所需的氢气量差 2–3 个数量级。先把装置的供氢能力算清楚，再拿它去量应用。</p>
+
+        <h3>第一步：装置能给多少氢？</h3>
+        <div class="formula">
+          催化剂负载 0.1 g × 产氢速率 500 μmol·g⁻¹·h⁻¹ = <strong>50 μmol·h⁻¹</strong><br>
+          50 μmol·h⁻¹ × 22.4 mL·mmol⁻¹ ≈ <strong>1.12 mL H₂ / 小时（标况）</strong>
+          <span class="f-note">
+            参考量级：含牺牲剂（甲醇/TEOA）体系 200–2000 μmol·g⁻¹·h⁻¹；全分解水（纯水，无牺牲剂）仅 1–100 μmol·g⁻¹·h⁻¹。
+            放大催化剂负载或聚光可提升，但数量级不变。
+          </span>
+        </div>
+
+        <h3>第二步：三个应用各要多少氢？</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>应用</th><th>需氢量</th><th>换算到本装置</th><th class="center">匹配度</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>① 富氢水</strong><br><span class="small">1.0–1.6 ppm</span></td>
+                <td>1 L 水需 <strong>11–18 mL H₂</strong><br><span class="small">（0.5–0.8 mmol）</span></td>
+                <td>1 L 需 <strong>10–16 小时</strong></td>
+                <td class="center tag-ok">量级匹配 ✅</td>
+              </tr>
+              <tr>
+                <td><strong>② 便携供氢</strong><br><span class="small">燃料电池 / 应急用氢</span></td>
+                <td>小型燃料电池 <strong>600–6000 mL/h</strong><br><span class="small">（10–100 mL/min）</span></td>
+                <td>本装置差 <strong>500–5000 倍</strong></td>
+                <td class="center tag-bad">严重不匹配 ❌</td>
+              </tr>
+              <tr>
+                <td><strong>③ 光催化产氢</strong><br><span class="small">无应用承诺</span></td>
+                <td>不承诺应用</td>
+                <td>不需量纲论证</td>
+                <td class="center tag-ok">不涉及 ✅</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>第三步：这道检验带来的三个判断</h3>
+        <ol>
+          <li><strong>①其实是最"技术上成立"的应用</strong>——富氢水所需氢气量极小（1 ppm 只要 11 mL H₂/L 水），恰好是光催化微量产氢的天然出口。讽刺的是：<strong>应用匹配度最高的是跑题风险最高的那个</strong>。</li>
+          <li><strong>②的"便携供氢"在工程上站不住</strong>——除非把定位改成"微流量供氢 / 教学演示 / 小型传感器供氢 / 分布式演示单元"，或做聚光 + 大面积反应器的放大论证。否则评审一句"你这 1 mL/h 能带什么"就把项目问倒了。</li>
+          <li><strong>③避开了整个量纲问题</strong>——不承诺应用，就没有"产氢量够不够"的追问。这是它"最稳"的深层原因，<strong>不只是因为标题不跑题，更因为它不欠一笔技术债</strong>。</li>
+        </ol>
+
+        <div class="callout note">
+          <div class="c-icon">i</div>
+          <div>
+            <p class="mt-0"><strong>给选 ② 的补救方案</strong>：在说明书写一节"供氢能力与应用场景的量纲匹配分析"，明确装置定位为<em>小流量分布式制氢单元</em>，并给出<em>放大路线</em>（聚光倍率、催化剂负载、反应器面积 → 产氢量放大曲线）。现场答辩主动把"1 mL/h"讲成"模块化堆叠可扩展"，把短板变成设计思路。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 03 综合对比表 ============ -->
+      <section class="section" id="compare">
+        <h2><span class="sec-no">03</span>综合对比表</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>维度</th>
+                <th class="center">① 富氢水版</th>
+                <th class="center">② 便携供氢版</th>
+                <th class="center">③ 产氢版</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>跑题风险</strong></td><td class="center tag-bad">高</td><td class="center tag-ok">低</td><td class="center tag-ok">零</td></tr>
+              <tr><td><strong>技术合理性（量纲）</strong></td><td class="center tag-ok">优</td><td class="center tag-bad">差</td><td class="center tag-ok">不涉及</td></tr>
+              <tr><td><strong>创新点清晰度</strong></td><td class="center tag-mid">中</td><td class="center tag-ok">高</td><td class="center tag-ok">最高</td></tr>
+              <tr><td><strong>开题被问倒的概率</strong></td><td class="center tag-mid">中高</td><td class="center tag-mid">中高</td><td class="center tag-ok">低</td></tr>
+              <tr><td><strong>实验工作量</strong></td><td class="center">1.15×</td><td class="center">1.15×</td><td class="center tag-ok">1.0×</td></tr>
+              <tr><td><strong>论文/说明书写作难度</strong></td><td class="center tag-bad">高</td><td class="center tag-mid">中</td><td class="center tag-ok">低</td></tr>
+              <tr><td><strong>与常见方向匹配</strong></td><td class="center">氢分子生物医学 / 功能水</td><td class="center">氢能储运 / 应急供氢</td><td class="center">光催化产氢 / 气液传质</td></tr>
+              <tr><td><strong>在本赛的胜率</strong></td><td class="center tag-mid">中低</td><td class="center tag-mid">中</td><td class="center tag-ok">高</td></tr>
+              <tr><td><strong>在后续赛道的价值</strong></td><td class="center tag-ok">最高（医工交叉）</td><td class="center">中</td><td class="center">中</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 04 三维风险 ============ -->
+      <section class="section" id="risks">
+        <h2><span class="sec-no">04</span>三维风险矩阵</h2>
+
+        <h3>开题阶段（11-01 – 11-08）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>风险点</th><th class="center">①</th><th class="center">②</th><th class="center">③</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>"这是能源课题吗？"</td><td class="center tag-bad">高危</td><td class="center tag-ok">低</td><td class="center tag-ok">无</td></tr>
+              <tr><td>"产氢量够用吗？"</td><td class="center tag-ok">低（需氢量小）</td><td class="center tag-bad">高危（差 2–3 个数量级）</td><td class="center tag-ok">不涉及</td></tr>
+              <tr><td>"创新点在哪？"</td><td class="center tag-mid">中（被应用稀释）</td><td class="center tag-mid">中</td><td class="center tag-ok">低（建模即创新点）</td></tr>
+              <tr><td>"健康价值有共识吗？"</td><td class="center tag-bad">高危</td><td class="center">不涉及</td><td class="center">不涉及</td></tr>
+              <tr><td>术语准确性</td><td class="center tag-mid">中</td><td class="center tag-mid">中</td><td class="center tag-mid">中高（"分解水" vs "产氢"）</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>实验推进阶段（11-09 – 11-22）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>实验项</th><th class="center">①</th><th class="center">②</th><th class="center">③</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>装置搭建（LED / 反应器 / 集气 / 溶解氢检测）</td><td class="center">✓</td><td class="center">✓</td><td class="center">✓</td></tr>
+              <tr><td>产氢速率正交实验（光强 / 浓度 / pH / 温度）</td><td class="center">✓</td><td class="center">✓</td><td class="center">✓</td></tr>
+              <tr><td>溶解氢浓度衰减 + 传质系数辨识</td><td class="center">✓</td><td class="center">✓</td><td class="center">✓</td></tr>
+              <tr><td>响应面建模 + 误差评估</td><td class="center">✓</td><td class="center">✓</td><td class="center">✓</td></tr>
+              <tr><td>富氢水浓度稳定性 / 半衰期测试</td><td class="center tag-mid">额外</td><td class="center">—</td><td class="center">—</td></tr>
+              <tr><td>供氢流量与场景需求匹配演示</td><td class="center">—</td><td class="center tag-mid">额外</td><td class="center">—</td></tr>
+              <tr><td><strong>工作量相对值</strong></td><td class="center">1.15×</td><td class="center">1.15×</td><td class="center tag-ok">1.0×</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>论文 / 说明书撰写阶段（12-01 – 12-15）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>章节</th><th class="center">① 的写作风险</th><th class="center">② 的写作风险</th><th class="center">③ 的写作风险</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>研制背景</td><td class="center tag-bad">高——易滑向健康宣称</td><td class="center tag-mid">中——需写清真实需求</td><td class="center tag-ok">低——双碳 + 太阳能制氢即可</td></tr>
+              <tr><td>创新点</td><td class="center tag-mid">中</td><td class="center tag-mid">中高</td><td class="center tag-ok">低——两点都硬</td></tr>
+              <tr><td>性能测试</td><td class="center tag-ok">低</td><td class="center tag-mid">中</td><td class="center tag-ok">低</td></tr>
+              <tr><td>应用前景</td><td class="center tag-bad">高——易越界</td><td class="center tag-mid">中高——易空洞</td><td class="center tag-ok">低</td></tr>
+              <tr><td>参考文献</td><td class="center tag-bad">高——需引氢医学文献</td><td class="center tag-mid">中</td><td class="center tag-ok">低——纯能源/化工文献</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout danger">
+          <div class="c-icon">!</div>
+          <div>
+            <p class="mt-0"><strong>红线提醒</strong>：① 若坚持用，全篇<strong>不得出现"治疗""疗效""保健""抗氧化功效"</strong>字样，只能写"文献报道氢分子具有生物活性""面向潜在健康应用场景"。商业化富氢水的功效宣称已被监管收紧，越界会直接影响评审观感与合规性。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 05 评委第一印象 ============ -->
+      <section class="section" id="judges">
+        <h2><span class="sec-no">05</span>评委第一印象（答辩时的现实）</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>评委背景</th><th>看到 ①</th><th>看到 ②</th><th>看到 ③</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>光催化 / 催化专家</td><td>"做富氢水的？跑题了"</td><td>"做便携制氢的，产氢量存疑"</td><td class="tag-ok">"做产氢与传质的，对口"</td></tr>
+              <tr><td>氢能储运专家</td><td>"这跟储氢什么关系？"</td><td class="tag-ok">"便携供氢有意思"</td><td>"标准制氢，可接受"</td></tr>
+              <tr><td>传质 / 反应工程专家</td><td>"建模思路可以"</td><td>"建模思路可以"</td><td class="tag-ok">"耦合传质建模，有理论深度"</td></tr>
+              <tr><td>能源政策 / 双碳专家</td><td>"健康产品？不相关"</td><td class="tag-ok">"便携供氢贴近应用"</td><td>"太阳能制氢，贴题"</td></tr>
+              <tr><td>氢分子医学专家（若在场）</td><td class="tag-ok">"有意思！"</td><td>"不太相关"</td><td>"不太相关"</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="small">本赛评委是中国可再生能源学会的<strong>能源专家</strong>，不是医学专家。① 的唯一优势场景（氢医学专家在场）在本赛<strong>基本不会出现</strong>——这也是把它移出本赛的直接依据。</p>
+      </section>
+
+      <!-- ============ 06 分场景推荐 ============ -->
+      <section class="section" id="verdict">
+        <h2><span class="sec-no">06</span>分场景推荐：同一装置，换赛场讲不同故事</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>场景</th><th>首选题目</th><th>理由</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>本赛：可再生能源竞赛</strong></td><td><span class="pill green">③（或 ② 补量纲论证）</span></td><td>能源评审 + 零跑题 + 零技术债 + 工作量最小</td></tr>
+              <tr><td>生医工创新设计竞赛（大二下，+1.5 分）</td><td><span class="pill amber">①</span></td><td>评审是生医工教指委，富氢水/氢分子生物医学是正经生物医学问题</td></tr>
+              <tr><td>挑战杯 / 互联网+（大二下—大三）</td><td><span class="pill amber">①（加商业叙事）</span></td><td>奖励医工交叉，国赛奖项上浮认定</td></tr>
+              <tr><td>国家级大创（大二上）</td><td><span class="pill amber">①（加细胞/动物实验）</span></td><td>用马雪梅/谢飞平台做深，结题 +1 分</td></tr>
+              <tr><td>论文投能源类期刊</td><td><span class="pill green">③</span></td><td>传质建模是硬核理论点，能源期刊认可</td></tr>
+              <tr><td>论文投生物医学 / 氢医学期刊</td><td><span class="pill amber">①</span></td><td><em>Medical Gas Research</em> 等接受氢分子生物医学</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout key">
+          <div class="c-icon">★</div>
+          <div>
+            <p class="mt-0"><strong>最终推荐：本赛选 ③</strong>。理由（按决定性排序）：零跑题 → 零技术债 → 工作量最小 → 创新点最硬 → 同一内核可复用到大二的医工交叉外壳，一鱼两吃。</p>
+            <p><strong>一句话记住：评审是什么人，作品就讲什么故事。</strong>本赛是能源评审 → 讲能源内核（③）；生医工赛是医学评审 → 讲医工外壳（①）。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="toc">
+      <h4>本页目录</h4>
+      <ul>
+        <li><a href="#insight">01 关键洞察</a></li>
+        <li><a href="#dimension">02 量纲硬检验</a></li>
+        <li><a href="#compare">03 综合对比表</a></li>
+        <li><a href="#risks">04 三维风险</a></li>
+        <li><a href="#judges">05 评委第一印象</a></li>
+        <li><a href="#verdict">06 分场景推荐</a></li>
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <strong>光催化产氢项目站</strong> · 北京工业大学 生物医学工程 2026 级 · 参赛方案整理
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="project.html">项目详情</a>
+      <a href="plan.html">实施计划</a>
+      <a href="analysis.html">选题对比</a>
+      <a href="application.html">申报指南</a>
+      <a href="guide.html">参赛上手</a>
+      <a href="policy.html">政策评估</a>
+    </div>
+    <p>本站为个人参赛方案整理，非竞赛官方页面。所有分值、级别、时间节点以官方正式文件为准。生成于 <span data-stamp></span>。</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

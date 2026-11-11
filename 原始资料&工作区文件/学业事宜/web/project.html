@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>项目详情 · 可见光催化产氢装置与传质耦合动力学建模</title>
+<meta name="description" content="题目③完整项目规格：科学问题、技术路线、装置模块、传质模型、量化指标与创新点。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="project.html">
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">H₂</span>
+      <span>光催化产氢项目<small>可再生能源竞赛 · 题目③</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false">菜单</button>
+    <nav class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="project.html">项目详情</a>
+      <a href="plan.html">实施计划</a>
+      <a href="analysis.html">选题对比</a>
+      <a href="application.html">申报指南</a>
+      <a href="guide.html">参赛上手</a>
+      <a href="policy.html">政策评估</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Project Specification</div>
+    <h1>可见光催化产氢装置的研制及产氢—溶解氢传质耦合动力学建模</h1>
+    <p>本项目的<strong>技术内核</strong>：一套桌面级可见光催化产氢装置 + 一份"产氢—溶解氢—逸出"三段耦合的传质动力学模型。零跑题风险，工作量最小，创新点最硬。</p>
+  </div>
+
+  <div class="layout">
+    <main>
+
+      <!-- ============ 01 项目卡 ============ -->
+      <section class="section" id="spec">
+        <h2><span class="sec-no">01</span>项目规格</h2>
+        <p class="sec-desc">报名与组队的所有硬信息，逐项与竞赛细则对齐。</p>
+
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th style="width:170px">作品名称</th><td><strong>可见光催化产氢装置的研制及产氢—溶解氢传质耦合动力学建模</strong></td></tr>
+              <tr><th>报名"技术领域"</th><td><span class="pill green">光催化</span><span class="pill">备选：氢能</span><span class="pill">备选：综合系统</span>　<span class="small">报名系统共 11 个选项，以官网为准</span></td></tr>
+              <tr><th>作品类型</th><td>科技作品类（实物制作 + 软件 + 设计）</td></tr>
+              <tr><th>团队类型</th><td><strong>本科生组</strong>　<span class="small">队里有 1 名研究生即整队归研究生组，难度翻倍</span></td></tr>
+              <tr><th>指导教师</th><td>孙再成（教授、博导，光催化制氢）<code>sunzc@bjut.edu.cn</code> · 010-67396905 · 环能楼 321</td></tr>
+              <tr><th>团队规模</th><td>5 人（队长 = 你，署名必须进前三）</td></tr>
+              <tr><th>物料成本</th><td>600–1500 元（LED 光源、玻璃器皿、磁力搅拌、溶解氢检测；<strong>催化剂借用</strong>）</td></tr>
+              <tr><th>总投入</th><td>约 120–160 小时/人；<strong>12 月只占 30 小时</strong>（填表、盖章、上传）</td></tr>
+              <tr><th>时间节点</th><td>报名 2026-11-30 ｜ 纸质盖章 12-25 ｜ 作品上传 12-31 ｜ 初赛 2027-01~02 ｜ 决赛 2027-03~04</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout key">
+          <div class="c-icon">★</div>
+          <div>
+            <p class="mt-0"><strong>为什么是这个题目</strong>：技术路线 100% 在赛题内（零跑题）、不承诺终端应用（零技术债）、工作量最小（纯装置 + 测试 + 建模）、创新点最硬（传质耦合建模可支撑学术水平评分）。同一内核可在大二换成"富氢水/氢分子医学"外壳，直接打生医工竞赛与挑战杯。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 02 科学问题 ============ -->
+      <section class="section" id="questions">
+        <h2><span class="sec-no">02</span>两个科学问题</h2>
+        <p class="sec-desc">第二个问题是你真正的护城河——大多数参赛队只报产氢速率，你能给出三段耦合模型并实测标定。</p>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-tag">科学问题 1 · 产氢侧</div>
+            <h4>可见光产氢的多因素响应规律是什么？</h4>
+            <p>催化剂浓度、光强、pH、温度四个因素如何共同决定产氢速率？交互作用是否显著？</p>
+            <p class="small"><strong>方法</strong>：Box-Behnken 响应面实验设计（9–15 组）+ ANOVA + 三维响应面图。</p>
+          </div>
+          <div class="card">
+            <div class="card-tag amber">科学问题 2 · 传质侧（护城河）</div>
+            <h4>产氢—溶解—逸出三段耦合传质如何建模？</h4>
+            <p>产生的 H₂ 从液相本体 → 气液界面 → 气相的传质过程如何随搅拌、温度、密封性变化？溶解氢浓度的衰减动力学如何？</p>
+            <p class="small"><strong>方法</strong>：双膜传质 + Henry 溶解度 + 生成速率 → 用实测衰减曲线拟合 kLa，给 R² / RMSE / 误差分布。</p>
+          </div>
+        </div>
+
+        <h3>传质模型骨架</h3>
+        <div class="formula">
+          dC<sub>H₂</sub>/dt = R<sub>gen</sub>(I, [cat], pH, T) − k<sub>L</sub>a · (C<sub>H₂</sub> − C*)<br>
+          C* = H<sup>−1</sup> · p<sub>H₂</sub>　（Henry 定律，气液平衡浓度）
+          <span class="f-note">
+            其中 R<sub>gen</sub> 为光催化产氢本征速率（由响应面模型给出），k<sub>L</sub>a 为液相体积传质系数，C* 为平衡溶解浓度。
+            <strong>实测</strong>：溶解氢浓度随时间的衰减曲线 → 最小二乘拟合 k<sub>L</sub>a → 模型预测 vs 实测，报 R²、RMSE、误差分布。
+          </span>
+        </div>
+      </section>
+
+      <!-- ============ 03 技术路线 ============ -->
+      <section class="section" id="route">
+        <h2><span class="sec-no">03</span>技术路线</h2>
+        <p class="sec-desc">实验主线 → 建模主线 → 迭代修正，五步闭环。</p>
+
+        <svg viewBox="0 0 760 190" role="img" aria-label="技术路线图：催化剂、装置搭建、产氢实验、浓度衰减测试、模型标定与误差评估五步闭环">
+          <defs>
+            <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+              <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#16794a"></path>
+            </marker>
+            <marker id="arrow2" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+              <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b3781a"></path>
+            </marker>
+          </defs>
+
+          <rect x="18" y="34" width="128" height="72" rx="11" fill="#e4f2e9" stroke="#bcdcc7"></rect>
+          <text x="82" y="62" text-anchor="middle" font-size="14" font-weight="700" fill="#0e5734">催化剂</text>
+          <text x="82" y="83" text-anchor="middle" font-size="11.5" fill="#3d6250">借用孙再成组样品</text>
+
+          <rect x="166" y="34" width="128" height="72" rx="11" fill="#e4f2e9" stroke="#bcdcc7"></rect>
+          <text x="230" y="62" text-anchor="middle" font-size="14" font-weight="700" fill="#0e5734">装置搭建</text>
+          <text x="230" y="83" text-anchor="middle" font-size="11.5" fill="#3d6250">LED · 反应器 · 集气</text>
+
+          <rect x="314" y="34" width="128" height="72" rx="11" fill="#e4f2e9" stroke="#bcdcc7"></rect>
+          <text x="378" y="62" text-anchor="middle" font-size="14" font-weight="700" fill="#0e5734">产氢实验</text>
+          <text x="378" y="83" text-anchor="middle" font-size="11.5" fill="#3d6250">正交 / 响应面设计</text>
+
+          <rect x="462" y="34" width="128" height="72" rx="11" fill="#fbf1dd" stroke="#e6d1a8"></rect>
+          <text x="526" y="62" text-anchor="middle" font-size="14" font-weight="700" fill="#8a5c11">浓度衰减</text>
+          <text x="526" y="83" text-anchor="middle" font-size="11.5" fill="#8a6a2c">溶解氢传质测试</text>
+
+          <rect x="610" y="34" width="132" height="72" rx="11" fill="#fbf1dd" stroke="#e6d1a8"></rect>
+          <text x="676" y="62" text-anchor="middle" font-size="14" font-weight="700" fill="#8a5c11">模型标定</text>
+          <text x="676" y="83" text-anchor="middle" font-size="11.5" fill="#8a6a2c">kLa · R² · RMSE</text>
+
+          <line x1="146" y1="70" x2="162" y2="70" stroke="#16794a" stroke-width="2" marker-end="url(#arrow)"></line>
+          <line x1="294" y1="70" x2="310" y2="70" stroke="#16794a" stroke-width="2" marker-end="url(#arrow)"></line>
+          <line x1="442" y1="70" x2="458" y2="70" stroke="#16794a" stroke-width="2" marker-end="url(#arrow)"></line>
+          <line x1="590" y1="70" x2="606" y2="70" stroke="#b3781a" stroke-width="2" marker-end="url(#arrow2)"></line>
+
+          <path d="M676,110 L676,150 L82,150 L82,112" fill="none" stroke="#b3781a" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow2)"></path>
+          <text x="380" y="168" text-anchor="middle" font-size="11.5" fill="#8a5c11">迭代修正模型参数与实验条件</text>
+
+          <text x="82" y="20" text-anchor="middle" font-size="11" fill="#61706a">实验主线</text>
+          <text x="676" y="20" text-anchor="middle" font-size="11" fill="#61706a">建模主线</text>
+        </svg>
+
+        <h3>装置模块分解</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>模块</th><th>组成</th><th>作用</th><th>关键指标</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>A. 光源</strong></td><td>可见光 LED 阵列（420–450 nm）+ 稳压电源</td><td>提供可控光强</td><td>光强 20–100 mW/cm²，可调</td></tr>
+              <tr><td><strong>B. 反应器</strong></td><td>石英/玻璃反应瓶 + 磁力搅拌 + 恒温水浴</td><td>光催化产氢主场</td><td>体积 100–500 mL，密封性良好</td></tr>
+              <tr><td><strong>C. 集气</strong></td><td>排水集气法 + 气体注射器 / 气相色谱（可选）</td><td>测产氢速率</td><td>精度 ±0.1 mL</td></tr>
+              <tr><td><strong>D. 溶解氢检测</strong></td><td>溶解氢检测仪 或 碘量法滴定</td><td>测溶解氢浓度与衰减</td><td>量程 0–2 ppm，成本 &lt;1000 元</td></tr>
+              <tr><td><strong>E. 采集与建模</strong></td><td>Python / MATLAB</td><td>响应面 + 传质模型</td><td>R²≥0.90，误差 ≤10%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 04 量化指标 ============ -->
+      <section class="section" id="metrics">
+        <h2><span class="sec-no">04</span>量化指标</h2>
+        <p class="sec-desc">写进申报书"主要技术指标"栏的那一组数字。所有指标必须实测，不得虚标。</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>指标</th><th>目标值</th><th>对标 / 说明</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>产氢速率</td><td class="num">≥ 500 μmol·g⁻¹·h⁻¹</td><td>借用催化剂的典型值附近；写实测值 + 与文献同类型催化剂对比</td></tr>
+              <tr><td>溶解氢浓度</td><td class="num">≥ 1.0 ppm，峰值 ≥ 1.5 ppm</td><td>行业常用区间 1.0–1.6 ppm</td></tr>
+              <tr><td>浓度半衰期</td><td class="num">密封下 ≥ 30 min</td><td>传质建模的核心输出；敞口/密封两组对比</td></tr>
+              <tr><td>响应面模型</td><td class="num">R² ≥ 0.90，误差 ≤ 10%</td><td>Box-Behnken + ANOVA + 三维响应面图</td></tr>
+              <tr><td>传质系数 k<sub>L</sub>a</td><td class="num">实测标定值</td><td>拟合值 + 置信区间 + 与文献 k<sub>L</sub>a 量级对比</td></tr>
+              <tr><td>装置成本</td><td class="num">≤ 1500 元</td><td>经济性评审看这个（细则写"可行性和经济性"）</td></tr>
+              <tr><td>运行功耗</td><td class="num">≤ 20 W</td><td>主要来自 LED 光源</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout warn">
+          <div class="c-icon">!</div>
+          <div>
+            <p class="mt-0"><strong>术语红线</strong>：若实验使用牺牲剂（甲醇 / 三乙醇胺），严格说不是"光催化<strong>分解水</strong>产氢"而是"光催化<strong>产氢</strong>"。本项目标题<strong>已去掉"分解水"三字</strong>，全篇统一用"光催化产氢"。若真做纯水体系，必须如实报告低 1–2 个数量级的产氢速率，并说明这是全分解水的固有挑战。<strong>诚实是最大的创新点保护。</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 05 创新点 ============ -->
+      <section class="section" id="innovation">
+        <h2><span class="sec-no">05</span>创新点（写进说明书的那一段）</h2>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-tag">理论创新</div>
+            <h4>产氢—溶解氢—逸出三段耦合传质建模</h4>
+            <p>把"光催化产氢"与"气液传质"两个常被分开处理的问题耦合起来，用双膜传质 + Henry 溶解度 + 生成速率构建统一模型，并以实测衰减曲线标定 k<sub>L</sub>a。</p>
+            <p class="small">这是<b>唯一护城河</b>，必须做实：模型形式 → 参数辨识 → 误差评估 → 与文献实测对比。</p>
+          </div>
+          <div class="card">
+            <div class="card-tag amber">工程创新</div>
+            <h4>装置集成氢浓度实时监测</h4>
+            <p>把集气、溶解氢检测、温度/光强采集集成到一个桌面单元，实现"产氢速率 + 溶解氢浓度"双通道实时输出，而不是事后化验。</p>
+            <p class="small">装置照片、系统框图、采集界面截图都是说明书必交的图件。</p>
+          </div>
+          <div class="card">
+            <div class="card-tag">应用创新</div>
+            <h4>面向小流量供氢场景的一体化与经济性设计</h4>
+            <p>给出成本、功耗、体积与产氢能力的量纲匹配分析，明确装置定位为<strong>小流量分布式制氢单元</strong>（演示、教学、小型传感器供氢），并给出模块化放大的路线。</p>
+            <p class="small">这一节是答辩时把"产氢量小"变成"设计思路"的关键。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 06 应用前景 ============ -->
+      <section class="section" id="outlook">
+        <h2><span class="sec-no">06</span>应用前景（仅写展望，不做实验）</h2>
+        <p class="sec-desc">说明书"应用前景分析"栏 ≤400 字。下面这段是可直接改用的底稿。</p>
+
+        <div class="tpl">
+          <span class="tpl-head">应用前景分析 · 预填底稿</span>
+          本装置面向<span class="em">小流量分布式制氢</span>与<span class="em">现场即时供氢</span>场景，可作为教学演示、
+          小型传感器供氢、应急点火/实验用氢等微流量用途的单元模块。<br><br>
+          经济性上，装置物料成本 ≤1500 元、运行功耗 ≤20 W，具备桌面化与小型化条件；
+          通过催化剂负载、聚光倍率与反应器面积的放大设计，产氢能力可按模块堆叠扩展。<br><br>
+          <span class="cmt">// 以下为展望段，只用"文献报道表明"这类措辞，不得写"治疗/疗效/保健功效"</span><br>
+          文献报道表明，溶解氢在若干生物医学场景中具有潜在研究价值，
+          未来可将本装置输出的溶解氢水用于探索性研究。<span class="em">本文不对此作任何功效宣称。</span>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 侧栏目录 -->
+    <aside class="toc">
+      <h4>本页目录</h4>
+      <ul>
+        <li><a href="#spec">01 项目规格</a></li>
+        <li><a href="#questions">02 科学问题</a></li>
+        <li><a href="#route">03 技术路线</a></li>
+        <li><a href="#metrics">04 量化指标</a></li>
+        <li><a href="#innovation">05 创新点</a></li>
+        <li><a href="#outlook">06 应用前景</a></li>
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <strong>光催化产氢项目站</strong> · 北京工业大学 生物医学工程 2026 级 · 参赛方案整理
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="project.html">项目详情</a>
+      <a href="plan.html">实施计划</a>
+      <a href="analysis.html">选题对比</a>
+      <a href="application.html">申报指南</a>
+      <a href="guide.html">参赛上手</a>
+      <a href="policy.html">政策评估</a>
+    </div>
+    <p>本站为个人参赛方案整理，非竞赛官方页面。所有分值、级别、时间节点以官方正式文件为准。生成于 <span data-stamp></span>。</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

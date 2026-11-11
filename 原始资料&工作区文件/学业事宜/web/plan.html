@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>实施计划 · 六周甘特、团队分工与 63 天倒排</title>
+<meta name="description" content="题目的执行计划：六周甘特图、5 人分工、63 天倒排表、三道决策门与风险降级预案。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="plan.html">
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">H₂</span>
+      <span>光催化产氢项目<small>可再生能源竞赛 · 题目③</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false">菜单</button>
+    <nav class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="project.html">项目详情</a>
+      <a href="plan.html">实施计划</a>
+      <a href="analysis.html">选题对比</a>
+      <a href="application.html">申报指南</a>
+      <a href="guide.html">参赛上手</a>
+      <a href="policy.html">政策评估</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Execution Plan</div>
+    <h1>实施计划：六周甘特 · 团队分工 · 63 天倒排</h1>
+    <p>核心纪律：<strong>所有实验压在 11 月完成，12 月只做填表、盖章、上传这类机械活</strong>。12 月中下旬是大一上期末冲刺期，为一张 0 分证书赔上加权平均分是负期望。</p>
+  </div>
+
+  <div class="layout">
+    <main>
+
+      <!-- ============ 01 六周甘特 ============ -->
+      <section class="section" id="gantt">
+        <h2><span class="sec-no">01</span>六周执行甘特（11-02 → 12-15）</h2>
+        <p class="sec-desc">绿色 = 实验主线；琥珀色 = 建模与写作；灰色 = 机械活。条形长度表示相对占用强度。</p>
+
+        <div class="gantt">
+          <div class="gantt-row">
+            <div class="gantt-label">方案与借料<small>W1 · 11/02–11/08</small></div>
+            <div class="gantt-track"><div class="gantt-bar soft" data-w="100" style="left:0%"></div></div>
+          </div>
+          <div class="gantt-row">
+            <div class="gantt-label">装置搭建<small>W1–W2</small></div>
+            <div class="gantt-track"><div class="gantt-bar" data-w="100" style="left:0%"></div></div>
+          </div>
+          <div class="gantt-row">
+            <div class="gantt-label">产氢正交实验<small>W2 · 11/09–11/15</small></div>
+            <div class="gantt-track"><div class="gantt-bar" data-w="62" style="left:16%"></div></div>
+          </div>
+          <div class="gantt-row">
+            <div class="gantt-label">浓度衰减测试<small>W3 · 11/16–11/22</small></div>
+            <div class="gantt-track"><div class="gantt-bar" data-w="52" style="left:32%"></div></div>
+          </div>
+          <div class="gantt-row">
+            <div class="gantt-label">传质建模标定<small>W3–W4</small></div>
+            <div class="gantt-track"><div class="gantt-bar alt" data-w="62" style="left:36%"></div></div>
+          </div>
+          <div class="gantt-row">
+            <div class="gantt-label">说明书撰写<small>W4–W6</small></div>
+            <div class="gantt-track"><div class="gantt-bar alt" data-w="62" style="left:40%"></div></div>
+          </div>
+          <div class="gantt-row">
+            <div class="gantt-label">申报书与签字<small>W5 · 12/01–12/15</small></div>
+            <div class="gantt-track"><div class="gantt-bar ghost" data-w="42" style="left:56%"></div></div>
+          </div>
+          <div class="gantt-row">
+            <div class="gantt-label">盖章 / 上传<small>W6–W7 · 12/16–12/31</small></div>
+            <div class="gantt-track"><div class="gantt-bar ghost" data-w="32" style="left:68%"></div></div>
+          </div>
+
+          <div class="gantt-axis">
+            <div></div>
+            <div class="gantt-axis-inner">
+              <span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6–W7</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <div class="c-icon">!</div>
+          <div>
+            <p class="mt-0"><strong>硬约束</strong>：12 月 16 日之后你<strong>不该再碰实验</strong>。所有实验必须在 11 月内出数；12 月只保留"联系老师 + 拍板"两项，填表/排版/扫描/上传全部交给队里负责写作排版的同学。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 02 团队分工 ============ -->
+      <section class="section" id="team">
+        <h2><span class="sec-no">02</span>团队分工（5 人，你必须在前三位）</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th class="center">位</th><th>角色</th><th>人选</th><th>具体产出</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center"><span class="pill green">1</span></td>
+                <td><strong>项目负责人 / 技术总控</strong></td>
+                <td><strong>你</strong></td>
+                <td>选题、技术路线、与导师/秘书处对接、答辩陈述、总撰稿</td>
+              </tr>
+              <tr>
+                <td class="center"><span class="pill green">2</span></td>
+                <td>建模与数据</td>
+                <td>生医工或数模队同学</td>
+                <td>响应面、传质模型、Python/MATLAB 拟合、误差评估</td>
+              </tr>
+              <tr>
+                <td class="center"><span class="pill green">3</span></td>
+                <td>装置与实验</td>
+                <td>信息学部 / 机械 / 能源方向</td>
+                <td>装置搭建、集气、溶解氢检测、原始数据记录</td>
+              </tr>
+              <tr>
+                <td class="center"><span class="pill">4</span></td>
+                <td>文献与应用前景</td>
+                <td>生医工同学</td>
+                <td>应用前景调研、文献综述、图表绘制</td>
+              </tr>
+              <tr>
+                <td class="center"><span class="pill">5</span></td>
+                <td>写作与排版</td>
+                <td>文笔好的同学</td>
+                <td>说明书排版（盲审规范）、申报书文字、答辩 PPT</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout danger">
+          <div class="c-icon">!</div>
+          <div>
+            <p class="mt-0"><strong>署名铁律</strong>：推免认定口径为"<strong>前三人</strong>"（竞赛目录尾注另有"前五人"说法，存在冲突，安全做法是站进前三）。<strong>你的名字必须在前三位</strong>，第 4、5 位对保研无效，只能算履历。想清楚再组队。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 03 63 天倒排 ============ -->
+      <section class="section" id="countdown">
+        <h2><span class="sec-no">03</span>63 天倒排表</h2>
+        <p class="sec-desc">基准日 2026-10-29（距报名 32 天、距纸质盖章 57 天、距上传 63 天）。</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>周次</th><th>时间</th><th>任务</th><th>交付物</th><th class="center">与期末冲突</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>W0</strong></td><td>10-29 – 11-01</td><td>注册账号；问赵亮/教务办；发 3–5 封邮件给导师</td><td>账号 + 邮件记录</td><td class="center tag-ok">无</td></tr>
+              <tr><td><strong>W1</strong></td><td>11-02 – 11-08</td><td>面谈老师；锁定选题；拆任务；开始文献与数据准备</td><td>一页纸定稿 + 分工表</td><td class="center tag-ok">低</td></tr>
+              <tr><td><strong>W2</strong></td><td>11-09 – 11-15</td><td>方案细化；跑通第一版模型/实验；写 1000 字提纲</td><td>第一版结果</td><td class="center tag-ok">低</td></tr>
+              <tr><td><strong>W3</strong></td><td>11-16 – 11-22</td><td>数据/实验推进；写说明书初稿 ≥2000 字；准备答辩要点</td><td>说明书初稿</td><td class="center tag-mid">中</td></tr>
+              <tr><td><strong>W4</strong></td><td>11-23 – 11-30</td><td><strong>官网报名（11-30 前）</strong>→ 截图发校内老师 + 发指定邮箱；说明书推进到 4000 字</td><td>报名号 + 备案截图</td><td class="center tag-mid">中</td></tr>
+              <tr><td><strong>W5</strong></td><td>12-01 – 12-12</td><td>说明书定稿 ≤5000 字 + 排版；申报书表 1/表 2 填完；约签字</td><td>两份定稿 + 签字页</td><td class="center tag-bad">高</td></tr>
+              <tr><td><strong>W6</strong></td><td>12-13 – 12-20</td><td>指导教师签字 + 全员签名；纸质交组织老师（<strong>12-25 前</strong>）</td><td>纸质件已交</td><td class="center tag-bad">高</td></tr>
+              <tr><td><strong>W7</strong></td><td>12-21 – 12-31</td><td>扫描盖章件；上传两份 PDF；核对报名信息一致性</td><td>提交成功截图</td><td class="center tag-bad">最高</td></tr>
+              <tr><td>—</td><td>2027-01 – 02</td><td>资格审查 + 初赛（线上评阅，评出三等奖及以上）</td><td>—</td><td class="center">期末后假期</td></tr>
+              <tr><td>—</td><td>2027-03 – 04</td><td>决赛（现场展示 + 陈述 + 答辩）</td><td>现场答辩</td><td class="center">开学后</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 04 决策门 ============ -->
+      <section class="section" id="gates">
+        <h2><span class="sec-no">04</span>三道决策门（到点就走，不要拖）</h2>
+
+        <div class="steps">
+          <div class="step">
+            <h4>Gate 1 · 11-03　有没有老师愿意聊 20 分钟？</h4>
+            <p><strong>不通过</strong> → 转乙方案纯计算路线（产业赛道赛题 4：氢气纯化-储存建模，指导安丽/程醒/胡宇翔，无需实验室），或降级为丙方案调研类。</p>
+          </div>
+          <div class="step">
+            <h4>Gate 2 · 11-10　选题定稿 + 5 人队齐 + 第一版技术路线图？</h4>
+            <p><strong>不通过</strong> → 降级为丙方案（社会实践调研类，≤1 万字报告），或放弃本届改做搭车当成员。</p>
+          </div>
+          <div class="step">
+            <h4>Gate 3 · 11-25　说明书初稿 3000 字以上 + 申报书表 1/表 2 已填？</h4>
+            <p><strong>不通过</strong> → 放弃上传本届（别浪费盖章额度），材料转大创/挑战杯素材，全力期末。</p>
+          </div>
+        </div>
+
+        <div class="callout note">
+          <div class="c-icon">i</div>
+          <div>
+            <p class="mt-0"><strong>退出成本</strong>：退出本届的最佳时点是 <strong>11-30 之前</strong>（还没投入盖章与签名的沉没成本）。11-30 之后退出，只损失时间，不损失其他。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 05 风险预案 ============ -->
+      <section class="section" id="risks">
+        <h2><span class="sec-no">05</span>风险与降级预案</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>风险</th><th>触发信号</th><th>预案</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>催化剂借不到</strong></td>
+                <td>11-05 前孙再成组未回</td>
+                <td>改找安丽 / 程醒；或用商用 TiO₂（P25，几十元/瓶）自备，说明书如实写来源</td>
+              </tr>
+              <tr>
+                <td><strong>细胞实验做不了</strong></td>
+                <td>11-15 前平台/细胞没落实</td>
+                <td><strong>已取消该部分</strong>——本项目不做细胞实验，仅在应用前景写展望</td>
+              </tr>
+              <tr>
+                <td><strong>溶解氢检测仪买不到</strong></td>
+                <td>11-08 前</td>
+                <td>用<strong>碘量法滴定</strong>测溶解氢（成本 &lt;100 元），或用便携溶解氧仪换算（需注明换算方法与误差）</td>
+              </tr>
+              <tr>
+                <td><strong>实验数据不够</strong></td>
+                <td>11-22 前 &lt;15 组</td>
+                <td>模型从"响应面"降为"单因素 + 线性回归"，说明书如实说明样本量</td>
+              </tr>
+              <tr>
+                <td><strong>队伍散伙</strong></td>
+                <td>11-15 前 2 人以上退出</td>
+                <td>缩到 3–4 人，工作拆成"建模 + 写作"两块；不足 3 人则放弃</td>
+              </tr>
+              <tr>
+                <td><strong>盖章流程卡住</strong></td>
+                <td>12-18 纸质件还没到组织老师手里</td>
+                <td>立刻与组织老师沟通改由学院科研秘书代送，<strong>别自己等到 12-30</strong></td>
+              </tr>
+              <tr>
+                <td><strong>期末崩盘</strong></td>
+                <td>12 月中模拟考明显下滑</td>
+                <td><strong>立即放弃上传</strong>，材料转大创/挑战杯素材（作品本身仍然成立）</td>
+              </tr>
+              <tr>
+                <td><strong>作品被判"非原创"</strong></td>
+                <td>老师把自己的在研课题塞给你</td>
+                <td><strong>拒绝，换方向</strong>——这会导致申报书签字声明造假，风险远大于一个奖</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 06 今晚就做 ============ -->
+      <section class="section" id="tonight">
+        <h2><span class="sec-no">06</span>今晚（10-29）就能做完的 5 件事</h2>
+        <div class="steps">
+          <div class="step">
+            <h4>注册大赛账号</h4>
+            <p>设好密码（8 位以上，含数字 + 符号 + 字母），把报名号生成入口摸熟。</p>
+          </div>
+          <div class="step">
+            <h4>给孙再成发第一封邮件</h4>
+            <p>题目用《可见光催化产氢装置的研制及产氢—溶解氢传质耦合动力学建模》，附一页纸，红线声明保留。</p>
+          </div>
+          <div class="step">
+            <h4>在群里回复赵亮</h4>
+            <p>问三个问题：校内组织老师是谁 / 邮箱发给谁 / 有无校内报备流程。</p>
+          </div>
+          <div class="step">
+            <h4>约一位往届学长或学姐</h4>
+            <p>往届获奖人（高爽爽、张新翰、张时诚）是现成的"同校同赛"人脉，问一句"怎么组队和盖章"。</p>
+          </div>
+          <div class="step">
+            <h4>把一页纸压成 PDF</h4>
+            <p>作为邮件附件，内容包括：题目、技术领域、3 个技术步骤、量化指标、所需支持、分工与时间表、原创性声明。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="toc">
+      <h4>本页目录</h4>
+      <ul>
+        <li><a href="#gantt">01 六周甘特</a></li>
+        <li><a href="#team">02 团队分工</a></li>
+        <li><a href="#countdown">03 63 天倒排</a></li>
+        <li><a href="#gates">04 三道决策门</a></li>
+        <li><a href="#risks">05 风险预案</a></li>
+        <li><a href="#tonight">06 今晚就做</a></li>
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <strong>光催化产氢项目站</strong> · 北京工业大学 生物医学工程 2026 级 · 参赛方案整理
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="project.html">项目详情</a>
+      <a href="plan.html">实施计划</a>
+      <a href="analysis.html">选题对比</a>
+      <a href="application.html">申报指南</a>
+      <a href="guide.html">参赛上手</a>
+      <a href="policy.html">政策评估</a>
+    </div>
+    <p>本站为个人参赛方案整理，非竞赛官方页面。所有分值、级别、时间节点以官方正式文件为准。生成于 <span data-stamp></span>。</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

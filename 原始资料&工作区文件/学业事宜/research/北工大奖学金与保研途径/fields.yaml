@@ -1,0 +1,74 @@
+fields:
+  基本信息:
+    - name: name
+      description: 项目或通道的官方全称
+      detail_level: 极简
+    - name: document_basis
+      description: 依据文件名与文号（如 工大发〔2026〕7号）
+      detail_level: 详细
+    - name: issuer_date
+      description: 发布单位与发布日期
+      detail_level: 简要
+    - name: effective_scope
+      description: 生效年级 / 适用学段 / 适用学院专业
+      detail_level: 详细
+
+  资格与门槛:
+    - name: eligibility
+      description: 适用对象与硬性条件（成绩排名、无挂科、体测、家庭经济困难认定等）
+      detail_level: 详细
+    - name: disqualifiers
+      description: 取消参评资格的情形
+      detail_level: 详细
+    - name: exclusivity
+      description: 能否与其他奖项/通道兼得、是否只认一项取高值
+      detail_level: 详细
+
+  金额与规模:
+    - name: amount
+      description: 奖励标准（元/年）或名额/比例
+      detail_level: 详细
+    - name: quota
+      description: 名额、覆盖率或推免指标数
+      detail_level: 简要
+
+  机制与流程:
+    - name: evaluation_body
+      description: 评定/推荐主体（校学生工作指导委员会、学院奖助工作小组、推免工作小组等）
+      detail_level: 简要
+    - name: procedure
+      description: 申请→初审→公示→审定→申诉的完整流程与天数
+      detail_level: 详细
+    - name: timeline
+      description: 年度关键时间节点（申请、截止、公示、报名、复试、录取）
+      detail_level: 详细
+
+  与保研的关系:
+    - name: link_to_baoyan
+      description: 是否计入推免加分、是否计入综测、是否仅作为复试材料、是否无直接关联
+      detail_level: 详细
+    - name: strategic_value
+      description: 对保研准备的实际价值与投入产出判断（仅个人规划口径下填写）
+      detail_level: 详细
+
+  来源与可信度:
+    - name: source_url
+      description: 可核验链接（官方优先）
+      detail_level: 详细
+    - name: source_level
+      description: 校级官方 / 院级官方 / 教育部平台 / 校内公众号 / 第三方商业机构
+      detail_level: 简要
+    - name: verification_status
+      description: 已核验原文 / 仅搜索摘要 / 二手转述 / 未获取
+      detail_level: 简要
+    - name: conflicts
+      description: 与其他来源的冲突点及处理建议
+      detail_level: 详细
+
+uncertain:
+  - 工大发〔2026〕7号完整原文（目前仅通过招生简章转载的图片OCR文本获取）
+  - 工大发〔2025〕25号完整原文与加分细则表
+  - 2026级本科生推免时适用的办法版本（2030届推免，制度可能再变）
+  - 化学与生命科学学院院级奖学金与推免实施细则
+  - 社会捐赠奖学金中面向化生学院/生医工的可申请项
+  - 2026届各学院推免数据的官方公示出处
