@@ -94,7 +94,7 @@ bjut_vis.rar
 
 # ---- PDF 默认排除，仅放行两份公开 VI 手册 ----
 *.pdf
-!原始资料&工作区文件/北京工业大学PPT模板/bjut-vi-assets/00_源文件/BJUT-SC*.pdf
+!knowledge/01_PPT模板与VI素材/bjut-vi-assets/00_源文件/BJUT-SC*.pdf
 
 # ---- 未纳入的本地脚本、样式、旧格式表单与草稿 ----
 # 本仓库是资料库而非代码库；如需纳入脚本，请显式 git add -f 并更新本规则。
